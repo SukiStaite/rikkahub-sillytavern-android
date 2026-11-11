@@ -3558,6 +3558,7 @@
   <string name="setting_model_page_proactive_model_follow_assistant">跟随助手的聊天模型</string>
   <string name="setting_model_page_compress_prompt_vars">变量：{content}、{target_tokens}、{additional_context}</string>
   <string name="setting_model_page_prompt_compress">上下文压缩</string>
+  <string name="theme_name_ios">iOS 系统</string>
   <string name="theme_name_liquid_glass">液态玻璃</string>
   <string name="chat_page_compress_pending_tools">请先处理未完成的工具调用，或保留包含这些调用的近期消息</string>
   <string name="workspace_export_result_title">导出结果</string>

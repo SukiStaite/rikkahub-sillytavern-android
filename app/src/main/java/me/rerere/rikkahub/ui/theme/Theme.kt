@@ -91,6 +91,13 @@ fun RikkahubTheme(
     }
 
     val colorScheme = when {
+        // iOS 主题强制使用 iOS 系统色板，忽略系统动态取色（dynamicColor），
+        // 保证「纯 iOS 系统色」始终生效。
+        settings.themeId == "ios" -> {
+            val theme = findThemeById("ios", settings.customThemes)
+                ?: findPresetTheme("ios")
+            theme.getColorScheme(dark = darkTheme)
+        }
         settings.dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
             val context = LocalContext.current
             if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
@@ -187,15 +194,15 @@ fun RikkahubTheme(
             // 界面里，观感是「每个按钮都鼓成了药丸」，暗色下尤其明显——
             // 深色背景把圆角的边缘衬得更突出，视觉上像是画错了。
             //
-            // 这里换成一组克制的值：按钮保留 8dp 的中等圆角（既有可点按
-            // 的暗示，又不至于糊成一团），卡片 12dp，大容器 16dp。
+            // iOS 风格：按 Apple 的圆角规范（HIG）设置——小控件 6-8dp、
+            // 按钮/输入框 10dp、卡片/分组 13dp、大容器/弹层 18dp。
             // 层级关系（小 < 中 < 大）保持不变，Material 的语义才成立。
             shapes = Shapes(
-                extraSmall = RoundedCornerShape(4.dp),
-                small = RoundedCornerShape(6.dp),
-                medium = RoundedCornerShape(8.dp),
-                large = RoundedCornerShape(12.dp),
-                extraLarge = RoundedCornerShape(16.dp),
+                extraSmall = RoundedCornerShape(6.dp),
+                small = RoundedCornerShape(8.dp),
+                medium = RoundedCornerShape(10.dp),
+                large = RoundedCornerShape(13.dp),
+                extraLarge = RoundedCornerShape(18.dp),
             ),
             content = content,
             motionScheme = MotionScheme.expressive()

@@ -5,6 +5,7 @@ import androidx.compose.runtime.Composable
 import me.rerere.rikkahub.ui.theme.presets.AutumnThemePreset
 import me.rerere.rikkahub.ui.theme.presets.BlackThemePreset
 import me.rerere.rikkahub.ui.theme.presets.ClaudeThemePreset
+import me.rerere.rikkahub.ui.theme.presets.IOSThemePreset
 import me.rerere.rikkahub.ui.theme.presets.LiquidGlassThemePreset
 import me.rerere.rikkahub.ui.theme.presets.MinimalThemePreset
 import me.rerere.rikkahub.ui.theme.presets.OceanThemePreset
@@ -24,6 +25,7 @@ data class PresetTheme(
 
 val PresetThemes by lazy {
     listOf(
+        IOSThemePreset,
         SakuraThemePreset,
         OceanThemePreset,
         SpringThemePreset,
