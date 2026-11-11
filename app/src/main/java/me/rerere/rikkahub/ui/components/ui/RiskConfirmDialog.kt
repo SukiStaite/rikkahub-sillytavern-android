@@ -2,7 +2,7 @@ package me.rerere.rikkahub.ui.components.ui
 
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
+import me.rerere.rikkahub.ui.ios.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import me.rerere.rikkahub.R

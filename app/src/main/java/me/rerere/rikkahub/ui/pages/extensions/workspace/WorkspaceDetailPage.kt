@@ -39,7 +39,7 @@ import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.AlertDialog
-import androidx.compose.material3.Button
+import me.rerere.rikkahub.ui.ios.Button
 import androidx.compose.material3.ButtonDefaults
 import me.rerere.rikkahub.ui.ios.Checkbox
 import androidx.compose.material3.FilledTonalIconButton
@@ -53,7 +53,7 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
+import me.rerere.rikkahub.ui.ios.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue

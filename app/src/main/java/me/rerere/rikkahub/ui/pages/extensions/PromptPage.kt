@@ -52,7 +52,7 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.AlertDialog
 import me.rerere.rikkahub.ui.ios.Checkbox
-import androidx.compose.material3.Button
+import me.rerere.rikkahub.ui.ios.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.FilledTonalIconButton
@@ -71,7 +71,7 @@ import me.rerere.rikkahub.ui.ios.Slider
 import androidx.compose.material3.Surface
 import me.rerere.rikkahub.ui.ios.Switch
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
+import me.rerere.rikkahub.ui.ios.TextButton
 import androidx.compose.material3.OutlinedTextFieldDefaults
 import me.rerere.rikkahub.ui.ios.RadioButton
 import androidx.compose.material3.TopAppBarDefaults

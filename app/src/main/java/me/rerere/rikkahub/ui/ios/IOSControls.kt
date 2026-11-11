@@ -51,10 +51,10 @@ private val IOSCheckUnchecked = Color(0xFFC7C7CC)
 private val IOSCheckUncheckedDark = Color(0xFF48484A)
 
 @Composable
-private fun iosBlue() = MaterialTheme.colorScheme.primary
+internal fun iosBlue() = MaterialTheme.colorScheme.primary
 
 @Composable
-private fun isDark() = MaterialTheme.colorScheme.surfaceContainerHigh.luminance() < 0.5f
+internal fun isDark() = MaterialTheme.colorScheme.surfaceContainerHigh.luminance() < 0.5f
 
 /** iOS 开关：胶囊轨道 + 白色圆形滑钮，开启为 iOS 绿 */
 @Composable
