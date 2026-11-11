@@ -186,7 +186,7 @@ fun RikkahubTheme(
     ) {
         MaterialExpressiveTheme(
             colorScheme = finalColorScheme,
-            typography = Typography,
+            typography = if (settings.useSystemFont) systemTypography else Typography,
             // 必须显式给一套 Shapes。
             //
             // MaterialExpressiveTheme 的默认形状是给「表达性」场景设计的：

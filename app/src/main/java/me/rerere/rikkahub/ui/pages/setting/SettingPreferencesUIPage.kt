@@ -79,6 +79,8 @@ import me.rerere.rikkahub.ui.components.richtext.MarkdownBlock
 import me.rerere.rikkahub.ui.components.ui.CardGroup
 import me.rerere.rikkahub.ui.components.ui.CardGroupValue
 import me.rerere.rikkahub.ui.components.ui.ConnectedChoiceButtons
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.TextButton
 import me.rerere.rikkahub.ui.components.ui.switchItem
 import me.rerere.rikkahub.ui.context.LocalToaster
 import me.rerere.rikkahub.ui.theme.CustomColors
@@ -118,6 +120,7 @@ internal fun SettingPreferencesUIContent(vm: SettingVM, contentPadding: PaddingV
     val toaster = LocalToaster.current
     val scope = rememberCoroutineScope()
     val chatFontFamily = rememberChatFontFamily(displaySetting)
+    var showSystemFontConfirm by remember { mutableStateOf(false) }
 
     fun updateDisplaySetting(setting: DisplaySetting) {
         displaySetting = setting
@@ -304,6 +307,48 @@ internal fun SettingPreferencesUIContent(vm: SettingVM, contentPadding: PaddingV
                         supportingContent = { Text(stringResource(R.string.setting_display_page_enable_quote_highlight_desc)) },
                         headlineContent = { Text(stringResource(R.string.setting_display_page_enable_quote_highlight_title)) },
                     )
+                }
+            }
+
+            item {
+                CardGroup(
+                    title = { Text(stringResource(R.string.setting_display_page_global_font_title)) },
+                ) {
+                    formItem(
+                        headlineContent = { Text(stringResource(R.string.setting_display_page_global_font_title)) },
+                    ) {
+                        ConnectedChoiceButtons(
+                            options = listOf(false, true),
+                            selected = settings.useSystemFont,
+                            onSelect = { useSystem ->
+                                // 切到系统字体需二次确认（不建议切换）
+                                if (useSystem && !settings.useSystemFont) {
+                                    showSystemFontConfirm = true
+                                } else {
+                                    vm.updateSettings { it.copy(useSystemFont = useSystem) }
+                                }
+                            },
+                            minHeight = 64.dp,
+                        ) { useSystem, _ ->
+                            Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                                Text(
+                                    text = "Aa",
+                                    style = MaterialTheme.typography.titleMedium,
+                                )
+                                Text(
+                                    text = if (useSystem) {
+                                        stringResource(R.string.setting_display_page_global_font_system)
+                                    } else {
+                                        stringResource(R.string.setting_display_page_global_font_default)
+                                    },
+                                    style = MaterialTheme.typography.labelSmall,
+                                    maxLines = 1,
+                                    softWrap = false,
+                                    overflow = TextOverflow.Ellipsis,
+                                )
+                            }
+                        }
+                    }
                 }
             }
 
@@ -649,6 +694,28 @@ internal fun SettingPreferencesUIContent(vm: SettingVM, contentPadding: PaddingV
                 }
             }
         }
+
+    // 切到系统字体：二次确认（不建议切换）
+    if (showSystemFontConfirm) {
+        AlertDialog(
+            onDismissRequest = { showSystemFontConfirm = false },
+            title = { Text(stringResource(R.string.setting_display_page_global_font_system_confirm_title)) },
+            text = { Text(stringResource(R.string.setting_display_page_global_font_system_confirm_message)) },
+            confirmButton = {
+                TextButton(onClick = {
+                    showSystemFontConfirm = false
+                    vm.updateSettings { it.copy(useSystemFont = true) }
+                }) {
+                    Text(stringResource(R.string.setting_display_page_global_font_system_confirm_yes))
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { showSystemFontConfirm = false }) {
+                    Text(stringResource(R.string.setting_display_page_global_font_system_confirm_no))
+                }
+            },
+        )
+    }
 }
 
 

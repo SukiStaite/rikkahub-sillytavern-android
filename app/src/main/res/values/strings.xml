@@ -1648,6 +1648,13 @@
   <string name="setting_display_page_custom_font_not_imported">No custom font imported. Supports .ttf, .otf, and .ttc files.</string>
   <string name="setting_display_page_custom_font_remove">Remove custom font</string>
   <string name="setting_display_page_custom_font_title">Custom Font</string>
+  <string name="setting_display_page_global_font_title">Font</string>
+  <string name="setting_display_page_global_font_system">System Font</string>
+  <string name="setting_display_page_global_font_default">Default Font</string>
+  <string name="setting_display_page_global_font_system_confirm_title">Use system font?</string>
+  <string name="setting_display_page_global_font_system_confirm_message">It is not recommended to switch to the system font. The bundled font (SF Pro variant) looks closer to iOS. Switch anyway?</string>
+  <string name="setting_display_page_global_font_system_confirm_yes">Switch</string>
+  <string name="setting_display_page_global_font_system_confirm_no">Cancel</string>
   <string name="setting_display_page_enable_auto_scroll_desc">Automatically scroll to the bottom when AI is generating content</string>
   <string name="setting_display_page_enable_auto_scroll_title">Auto Scroll</string>
   <string name="setting_display_page_enable_blur_effect_desc">Enable blur effect on chat input bar</string>

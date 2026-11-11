@@ -108,3 +108,10 @@ val JetbrainsMono = FontFamily(
         )
     )
 )
+
+/**
+ * 系统默认字体排版（Android 默认字体 / Material 默认 Typography）。
+ * 与内置 Inter（SF 变体）互斥，用户可在 设置 → 偏好 → UI 里切换。
+ * 注意：`Typography`（Inter 版）val 会遮蔽同名类，这里用全限定名。
+ */
+val systemTypography: androidx.compose.material3.Typography = androidx.compose.material3.Typography()

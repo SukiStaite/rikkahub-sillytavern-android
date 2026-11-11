@@ -1641,6 +1641,13 @@
   <string name="setting_display_page_custom_font_not_imported">未导入自定义字体。支持 .ttf、.otf 和 .ttc 文件。</string>
   <string name="setting_display_page_custom_font_remove">移除自定义字体</string>
   <string name="setting_display_page_custom_font_title">自定义字体</string>
+  <string name="setting_display_page_global_font_title">字体</string>
+  <string name="setting_display_page_global_font_system">系统字体</string>
+  <string name="setting_display_page_global_font_default">默认字体</string>
+  <string name="setting_display_page_global_font_system_confirm_title">切换到系统字体？</string>
+  <string name="setting_display_page_global_font_system_confirm_message">不建议切换系统字体。内置的 Inter 字体（SF Pro 变体）更贴近 iOS 观感。确定要切换到系统字体吗？</string>
+  <string name="setting_display_page_global_font_system_confirm_yes">切换</string>
+  <string name="setting_display_page_global_font_system_confirm_no">取消</string>
   <string name="setting_display_page_enable_auto_scroll_desc">AI生成内容时自动滚动到底部</string>
   <string name="setting_display_page_enable_auto_scroll_title">自动滚动</string>
   <string name="setting_display_page_enable_blur_effect_desc">在聊天输入栏启用模糊效果</string>

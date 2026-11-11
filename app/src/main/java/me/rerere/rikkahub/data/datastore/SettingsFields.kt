@@ -96,6 +96,7 @@ internal val SETTINGS_FIELDS: List<SettingsField<*, *>> = with(SettingsStore) {
         // UI设置
         plain(DYNAMIC_COLOR, Settings::dynamicColor) { copy(dynamicColor = it) },
         plain(THEME_ID, Settings::themeId) { copy(themeId = it) },
+        plain(USE_SYSTEM_FONT, Settings::useSystemFont) { copy(useSystemFont = it) },
         json(CUSTOM_THEMES, Settings::customThemes) { copy(customThemes = it) },
         json(DISPLAY_SETTING, Settings::displaySetting) { copy(displaySetting = it) },
         json(NETWORK_SETTING, Settings::networkSetting) { copy(networkSetting = it) },

@@ -45,6 +45,8 @@ data class Settings(
     val init: Boolean = false,
     val dynamicColor: Boolean = true,
     val themeId: String = PresetThemes[0].id,
+    // 是否使用系统默认字体（而非内置的 Inter / SF 变体）。切换系统字体时 UI 会给出「不建议」的确认提示。
+    val useSystemFont: Boolean = false,
     val customThemes: List<CustomTheme> = emptyList(),
     val developerMode: Boolean = false,
     val displaySetting: DisplaySetting = DisplaySetting(),
