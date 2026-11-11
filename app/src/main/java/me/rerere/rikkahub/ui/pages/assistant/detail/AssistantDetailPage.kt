@@ -50,7 +50,7 @@ import androidx.compose.foundation.text.TextAutoSize
 import me.rerere.rikkahub.ui.ios.AlertDialog
 import me.rerere.rikkahub.ui.ios.Card
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.CircularWavyProgressIndicator
+import me.rerere.rikkahub.ui.ios.CircularWavyProgressIndicator
 import androidx.compose.material3.Icon
 import me.rerere.rikkahub.ui.ios.IconButton
 import androidx.compose.material3.MaterialShapes

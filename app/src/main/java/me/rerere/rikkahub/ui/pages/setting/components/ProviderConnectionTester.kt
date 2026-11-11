@@ -13,7 +13,7 @@ import androidx.compose.foundation.verticalScroll
 import me.rerere.rikkahub.ui.ios.AlertDialog
 import androidx.compose.material3.Icon
 import me.rerere.rikkahub.ui.ios.IconButton
-import androidx.compose.material3.LinearWavyProgressIndicator
+import me.rerere.rikkahub.ui.ios.LinearWavyProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import me.rerere.rikkahub.ui.ios.ModalBottomSheet
 import androidx.compose.material3.Text

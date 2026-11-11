@@ -23,7 +23,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import me.rerere.rikkahub.ui.ios.Card
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.CircularWavyProgressIndicator
+import me.rerere.rikkahub.ui.ios.CircularWavyProgressIndicator
 import androidx.compose.material3.Icon
 import me.rerere.rikkahub.ui.ios.IconButton
 import me.rerere.rikkahub.ui.ios.LargeFlexibleTopAppBar

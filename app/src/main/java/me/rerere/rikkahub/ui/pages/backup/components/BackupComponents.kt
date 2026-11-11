@@ -28,7 +28,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import me.rerere.rikkahub.ui.ios.Button
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.CircularWavyProgressIndicator
+import me.rerere.rikkahub.ui.ios.CircularWavyProgressIndicator
 import me.rerere.rikkahub.ui.ios.FilledTonalButton
 import androidx.compose.material3.FloatingToolbarDefaults.ScreenOffset
 import androidx.compose.material3.FloatingToolbarDefaults.floatingToolbarVerticalNestedScroll

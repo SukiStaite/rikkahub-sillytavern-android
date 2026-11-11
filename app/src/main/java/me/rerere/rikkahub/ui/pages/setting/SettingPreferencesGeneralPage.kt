@@ -79,7 +79,7 @@ import org.koin.androidx.compose.koinViewModel
 import androidx.compose.material3.Icon
 import me.rerere.hugeicons.stroke.ArrowRight01
 import me.rerere.rikkahub.ui.ios.FilledTonalButton
-import androidx.compose.material3.ContainedLoadingIndicator
+import me.rerere.rikkahub.ui.ios.ContainedLoadingIndicator
 import androidx.compose.foundation.layout.size
 
 @Composable

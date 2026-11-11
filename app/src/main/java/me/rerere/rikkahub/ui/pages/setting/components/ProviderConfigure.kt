@@ -8,8 +8,8 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.material3.ContainedLoadingIndicator
-import androidx.compose.material3.LinearWavyProgressIndicator
+import me.rerere.rikkahub.ui.ios.ContainedLoadingIndicator
+import me.rerere.rikkahub.ui.ios.LinearWavyProgressIndicator
 import androidx.compose.material3.ProgressIndicatorDefaults
 import androidx.compose.material3.Icon
 import me.rerere.rikkahub.ui.ios.IconButton

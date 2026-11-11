@@ -22,7 +22,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.TextAutoSize
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.Badge
+import me.rerere.rikkahub.ui.ios.Badge
 import androidx.compose.material3.ButtonDefaults
 import me.rerere.rikkahub.ui.ios.FilledTonalButton
 import androidx.compose.material3.Icon

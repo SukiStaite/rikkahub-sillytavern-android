@@ -36,7 +36,7 @@ import androidx.compose.material3.MaterialTheme
 import me.rerere.rikkahub.ui.ios.OutlinedButton
 import me.rerere.rikkahub.ui.ios.OutlinedTextField
 import me.rerere.rikkahub.ui.ios.Scaffold
-import androidx.compose.material3.SuggestionChip
+import me.rerere.rikkahub.ui.ios.SuggestionChip
 import me.rerere.rikkahub.ui.ios.Surface
 import androidx.compose.material3.Text
 import me.rerere.rikkahub.ui.ios.TextButton

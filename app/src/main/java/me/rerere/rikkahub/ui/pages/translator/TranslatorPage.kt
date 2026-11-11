@@ -36,7 +36,7 @@ import androidx.compose.material3.FloatingToolbarDefaults.ScreenOffset
 import androidx.compose.material3.HorizontalFloatingToolbar
 import androidx.compose.material3.Icon
 import me.rerere.rikkahub.ui.ios.IconButton
-import androidx.compose.material3.LinearWavyProgressIndicator
+import me.rerere.rikkahub.ui.ios.LinearWavyProgressIndicator
 import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.MaterialTheme
 import me.rerere.rikkahub.ui.ios.Scaffold

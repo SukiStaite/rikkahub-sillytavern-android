@@ -13,7 +13,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.ContainedLoadingIndicator
+import me.rerere.rikkahub.ui.ios.ContainedLoadingIndicator
 import me.rerere.rikkahub.ui.ios.ExtendedFloatingActionButton
 import androidx.compose.material3.Icon
 import me.rerere.rikkahub.ui.ios.LargeFlexibleTopAppBar

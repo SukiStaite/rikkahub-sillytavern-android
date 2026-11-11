@@ -11,7 +11,7 @@ import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.material3.CircularWavyProgressIndicator
+import me.rerere.rikkahub.ui.ios.CircularWavyProgressIndicator
 import androidx.compose.material3.Icon
 import me.rerere.rikkahub.ui.ios.LargeFlexibleTopAppBar
 import androidx.compose.material3.MaterialTheme

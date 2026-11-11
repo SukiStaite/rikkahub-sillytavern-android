@@ -23,7 +23,7 @@ import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import me.rerere.rikkahub.ui.ios.AlertDialog
-import androidx.compose.material3.ContainedLoadingIndicator
+import me.rerere.rikkahub.ui.ios.ContainedLoadingIndicator
 import me.rerere.rikkahub.ui.ios.DropdownMenu
 import me.rerere.rikkahub.ui.ios.DropdownMenuItem
 import androidx.compose.material3.Icon

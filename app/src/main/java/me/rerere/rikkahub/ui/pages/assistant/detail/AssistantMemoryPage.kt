@@ -21,7 +21,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import me.rerere.rikkahub.ui.ios.AlertDialog
-import androidx.compose.material3.ContainedLoadingIndicator
+import me.rerere.rikkahub.ui.ios.ContainedLoadingIndicator
 import me.rerere.rikkahub.ui.ios.FilledTonalButton
 import androidx.compose.material3.Icon
 import me.rerere.rikkahub.ui.ios.IconButton

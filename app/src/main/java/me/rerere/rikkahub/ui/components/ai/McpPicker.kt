@@ -13,12 +13,12 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
-import androidx.compose.material3.Badge
-import androidx.compose.material3.BadgedBox
+import me.rerere.rikkahub.ui.ios.Badge
+import me.rerere.rikkahub.ui.ios.BadgedBox
 import me.rerere.rikkahub.ui.ios.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import me.rerere.rikkahub.ui.ios.IconButton
-import androidx.compose.material3.LinearWavyProgressIndicator
+import me.rerere.rikkahub.ui.ios.LinearWavyProgressIndicator
 import androidx.compose.material3.ListItemColors
 import androidx.compose.material3.ListItemDefaults
 import androidx.compose.material3.ListItemShapes
