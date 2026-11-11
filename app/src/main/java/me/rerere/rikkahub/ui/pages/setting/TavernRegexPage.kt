@@ -12,7 +12,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import me.rerere.rikkahub.ui.ios.AlertDialog
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
+import me.rerere.rikkahub.ui.ios.IconButton
 import androidx.compose.material3.LargeFlexibleTopAppBar
 import androidx.compose.material3.MaterialTheme
 import me.rerere.rikkahub.ui.ios.OutlinedTextField

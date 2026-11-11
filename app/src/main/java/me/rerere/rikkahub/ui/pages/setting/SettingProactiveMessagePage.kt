@@ -57,7 +57,7 @@ import androidx.compose.foundation.layout.Row
 import me.rerere.rikkahub.data.service.ProactiveMessageLog
 import me.rerere.rikkahub.utils.writeClipboardText
 import me.rerere.rikkahub.utils.plus
-import androidx.compose.material3.ListItem
+import me.rerere.rikkahub.ui.ios.ListItem
 import androidx.compose.material3.Icon
 import androidx.compose.foundation.clickable
 import com.composables.icons.lucide.Check

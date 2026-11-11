@@ -10,7 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import me.rerere.rikkahub.ui.ios.Card
-import androidx.compose.material3.ListItem
+import me.rerere.rikkahub.ui.ios.ListItem
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import me.rerere.rikkahub.ui.ios.Surface

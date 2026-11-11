@@ -26,7 +26,7 @@ import androidx.compose.material3.Badge
 import androidx.compose.material3.ButtonDefaults
 import me.rerere.rikkahub.ui.ios.FilledTonalButton
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
+import me.rerere.rikkahub.ui.ios.IconButton
 import androidx.compose.material3.ListItemDefaults
 import androidx.compose.material3.ListItemShapes
 import androidx.compose.material3.MaterialTheme

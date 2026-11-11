@@ -29,7 +29,7 @@ import androidx.compose.material3.CardDefaults
 import me.rerere.rikkahub.ui.ios.CircularProgressIndicator
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
+import me.rerere.rikkahub.ui.ios.IconButton
 import androidx.compose.material3.LargeFlexibleTopAppBar
 import me.rerere.rikkahub.ui.ios.HorizontalDivider
 import androidx.compose.material3.MaterialTheme

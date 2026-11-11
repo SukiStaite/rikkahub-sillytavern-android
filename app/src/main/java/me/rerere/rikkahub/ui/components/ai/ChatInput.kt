@@ -47,7 +47,7 @@ import androidx.compose.material3.BasicAlertDialog
 import androidx.compose.material3.DropdownMenu
 import me.rerere.rikkahub.ui.ios.HorizontalDivider
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
+import me.rerere.rikkahub.ui.ios.IconButton
 import androidx.compose.material3.MaterialTheme
 import me.rerere.rikkahub.ui.ios.Surface
 import androidx.compose.material3.Text

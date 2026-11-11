@@ -39,7 +39,7 @@ import androidx.compose.material3.FloatingToolbarDefaults.floatingToolbarVertica
 import me.rerere.rikkahub.ui.ios.HorizontalDivider
 import androidx.compose.material3.HorizontalFloatingToolbar
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
+import me.rerere.rikkahub.ui.ios.IconButton
 import androidx.compose.material3.MaterialTheme
 import me.rerere.rikkahub.ui.ios.OutlinedTextField
 import androidx.compose.material3.Scaffold

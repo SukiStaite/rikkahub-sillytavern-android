@@ -9,7 +9,7 @@ import androidx.compose.foundation.shape.CircleShape
 import me.rerere.rikkahub.ui.ios.CircularProgressIndicator
 import androidx.compose.material3.FilledTonalIconButton
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
+import me.rerere.rikkahub.ui.ios.IconButton
 import androidx.compose.material3.IconButtonDefaults
 import androidx.compose.material3.MaterialTheme
 import me.rerere.rikkahub.ui.ios.Surface

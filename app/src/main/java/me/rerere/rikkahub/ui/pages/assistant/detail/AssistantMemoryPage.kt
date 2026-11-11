@@ -24,7 +24,7 @@ import me.rerere.rikkahub.ui.ios.AlertDialog
 import androidx.compose.material3.ContainedLoadingIndicator
 import me.rerere.rikkahub.ui.ios.FilledTonalButton
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
+import me.rerere.rikkahub.ui.ios.IconButton
 import androidx.compose.material3.LargeFlexibleTopAppBar
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
