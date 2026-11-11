@@ -23,7 +23,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.AlertDialog
 import me.rerere.rikkahub.ui.ios.Button
-import androidx.compose.material3.Card
+import me.rerere.rikkahub.ui.ios.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.FilledTonalIconButton
 import androidx.compose.material3.Icon
@@ -37,7 +37,7 @@ import me.rerere.rikkahub.ui.ios.OutlinedButton
 import androidx.compose.material3.ProvideTextStyle
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.SheetValue
-import androidx.compose.material3.Surface
+import me.rerere.rikkahub.ui.ios.Surface
 import androidx.compose.material3.Text
 import me.rerere.rikkahub.ui.ios.TextButton
 import androidx.compose.material3.TextField

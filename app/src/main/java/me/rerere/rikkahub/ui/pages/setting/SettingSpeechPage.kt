@@ -23,7 +23,7 @@ import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import me.rerere.rikkahub.ui.ios.Button
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.Card
+import me.rerere.rikkahub.ui.ios.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton

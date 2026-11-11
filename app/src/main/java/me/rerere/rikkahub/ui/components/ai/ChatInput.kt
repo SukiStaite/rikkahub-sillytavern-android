@@ -45,11 +45,11 @@ import androidx.compose.foundation.text.input.TextFieldLineLimits
 import androidx.compose.foundation.text.input.TextFieldState
 import androidx.compose.material3.BasicAlertDialog
 import androidx.compose.material3.DropdownMenu
-import androidx.compose.material3.HorizontalDivider
+import me.rerere.rikkahub.ui.ios.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
+import me.rerere.rikkahub.ui.ios.Surface
 import androidx.compose.material3.Text
 import me.rerere.rikkahub.ui.ios.TextButton
 import androidx.compose.material3.TextField

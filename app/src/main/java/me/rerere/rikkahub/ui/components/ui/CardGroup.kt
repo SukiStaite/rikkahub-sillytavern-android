@@ -30,7 +30,7 @@ import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ProvideTextStyle
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Surface
+import me.rerere.rikkahub.ui.ios.Surface
 import me.rerere.rikkahub.ui.ios.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar

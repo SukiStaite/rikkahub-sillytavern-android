@@ -53,7 +53,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.AlertDialog
 import me.rerere.rikkahub.ui.ios.Checkbox
 import me.rerere.rikkahub.ui.ios.Button
-import androidx.compose.material3.Card
+import me.rerere.rikkahub.ui.ios.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.FilledTonalIconButton
 import androidx.compose.material3.FloatingToolbarDefaults.ScreenOffset
@@ -68,7 +68,7 @@ import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import me.rerere.rikkahub.ui.ios.Slider
-import androidx.compose.material3.Surface
+import me.rerere.rikkahub.ui.ios.Surface
 import me.rerere.rikkahub.ui.ios.Switch
 import androidx.compose.material3.Text
 import me.rerere.rikkahub.ui.ios.TextButton

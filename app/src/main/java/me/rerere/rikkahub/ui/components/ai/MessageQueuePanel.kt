@@ -11,7 +11,7 @@ import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.text.input.TextFieldLineLimits
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
+import me.rerere.rikkahub.ui.ios.Surface
 import androidx.compose.material3.Text
 import me.rerere.rikkahub.ui.ios.TextButton
 import androidx.compose.material3.TextField
