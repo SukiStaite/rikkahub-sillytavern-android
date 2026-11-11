@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.padding
 import me.rerere.rikkahub.ui.ios.AlertDialog
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedCard
+import me.rerere.rikkahub.ui.ios.OutlinedCard
 import androidx.compose.material3.Text
 import me.rerere.rikkahub.ui.ios.TextButton
 import androidx.compose.runtime.Composable

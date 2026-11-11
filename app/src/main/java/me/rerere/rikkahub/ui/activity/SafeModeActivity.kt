@@ -27,7 +27,7 @@ import me.rerere.rikkahub.ui.ios.Button
 import me.rerere.rikkahub.ui.ios.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.FilterChip
+import me.rerere.rikkahub.ui.ios.FilterChip
 import androidx.compose.material3.MaterialTheme
 import me.rerere.rikkahub.ui.ios.ModalBottomSheet
 import me.rerere.rikkahub.ui.ios.OutlinedButton

@@ -48,6 +48,7 @@ fun Scaffold(
             Box(modifier = Modifier.weight(1f)) {
                 content(PaddingValues(0.dp))
             }
+            snackbarHost()
             bottomBar()
         }
         Box(

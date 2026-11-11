@@ -16,7 +16,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.LinearProgressIndicator
+import me.rerere.rikkahub.ui.ios.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import me.rerere.rikkahub.ui.ios.OutlinedTextField
 import me.rerere.rikkahub.ui.ios.Scaffold

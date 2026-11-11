@@ -19,7 +19,7 @@ import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import me.rerere.rikkahub.ui.ios.Card
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.FilterChip
+import me.rerere.rikkahub.ui.ios.FilterChip
 import androidx.compose.material3.Icon
 import me.rerere.rikkahub.ui.ios.IconButton
 import me.rerere.rikkahub.ui.ios.ListItem

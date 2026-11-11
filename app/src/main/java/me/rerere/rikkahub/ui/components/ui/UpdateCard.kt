@@ -17,7 +17,7 @@ import me.rerere.rikkahub.ui.ios.IconButton
 import me.rerere.rikkahub.ui.ios.ListItem
 import androidx.compose.material3.MaterialTheme
 import me.rerere.rikkahub.ui.ios.ModalBottomSheet
-import androidx.compose.material3.OutlinedCard
+import me.rerere.rikkahub.ui.ios.OutlinedCard
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue

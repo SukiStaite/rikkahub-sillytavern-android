@@ -19,7 +19,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.text.KeyboardOptions
 import me.rerere.rikkahub.ui.ios.CircularProgressIndicator
-import androidx.compose.material3.ExtendedFloatingActionButton
+import me.rerere.rikkahub.ui.ios.ExtendedFloatingActionButton
 import androidx.compose.material3.Icon
 import me.rerere.rikkahub.ui.ios.IconButton
 import me.rerere.rikkahub.ui.ios.LargeFlexibleTopAppBar

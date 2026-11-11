@@ -15,7 +15,7 @@ import androidx.compose.material3.CardDefaults
 import me.rerere.rikkahub.ui.ios.LargeFlexibleTopAppBar
 import androidx.compose.material3.MaterialTheme
 import me.rerere.rikkahub.ui.ios.Scaffold
-import androidx.compose.material3.SnackbarHost
+import me.rerere.rikkahub.ui.ios.SnackbarHost
 import androidx.compose.material3.SnackbarHostState
 import androidx.compose.material3.SnackbarResult
 import androidx.compose.material3.Text

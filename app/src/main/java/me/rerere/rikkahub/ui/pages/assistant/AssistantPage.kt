@@ -28,7 +28,7 @@ import me.rerere.rikkahub.ui.ios.Button
 import me.rerere.rikkahub.ui.ios.Card
 import androidx.compose.material3.CardDefaults
 import me.rerere.rikkahub.ui.ios.Checkbox
-import androidx.compose.material3.FilterChip
+import me.rerere.rikkahub.ui.ios.FilterChip
 import androidx.compose.material3.FilterChipDefaults
 import androidx.compose.material3.Icon
 import me.rerere.rikkahub.ui.ios.IconButton

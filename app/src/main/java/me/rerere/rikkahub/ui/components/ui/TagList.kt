@@ -12,7 +12,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import me.rerere.rikkahub.ui.ios.AlertDialog
 import androidx.compose.material3.Icon
-import androidx.compose.material3.InputChip
+import me.rerere.rikkahub.ui.ios.InputChip
 import androidx.compose.material3.MaterialTheme
 import me.rerere.rikkahub.ui.ios.OutlinedTextField
 import me.rerere.rikkahub.ui.ios.Surface

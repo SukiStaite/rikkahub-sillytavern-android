@@ -11,7 +11,7 @@ import androidx.compose.material3.MaterialTheme
 import me.rerere.rikkahub.ui.ios.Surface
 import me.rerere.rikkahub.ui.ios.Card
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.FilterChip
+import me.rerere.rikkahub.ui.ios.FilterChip
 import androidx.compose.material3.Icon
 import me.rerere.rikkahub.ui.ios.IconButton
 import androidx.compose.material3.ExperimentalMaterial3Api

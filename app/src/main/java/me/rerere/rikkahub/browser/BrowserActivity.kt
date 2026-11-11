@@ -46,7 +46,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import me.rerere.rikkahub.ui.ios.HorizontalDivider
 import me.rerere.rikkahub.ui.ios.IconButton
-import androidx.compose.material3.LinearProgressIndicator
+import me.rerere.rikkahub.ui.ios.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import me.rerere.rikkahub.ui.ios.OutlinedTextField
 import me.rerere.rikkahub.ui.ios.Surface

@@ -31,7 +31,7 @@ import androidx.compose.material3.Icon
 import me.rerere.rikkahub.ui.ios.ListItem
 import androidx.compose.material3.MaterialTheme
 import me.rerere.rikkahub.ui.ios.ModalBottomSheet
-import androidx.compose.material3.OutlinedCard
+import me.rerere.rikkahub.ui.ios.OutlinedCard
 import androidx.compose.material3.ProvideTextStyle
 import me.rerere.rikkahub.ui.ios.Surface
 import me.rerere.rikkahub.ui.ios.Switch
