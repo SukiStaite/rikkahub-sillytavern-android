@@ -163,3 +163,20 @@ fun Surface(
         }
     }
 }
+
+@Composable
+fun ElevatedCard(
+    modifier: Modifier = Modifier,
+    shape: Shape? = null,
+    colors: Any? = null,
+    elevation: Any? = null,
+    border: BorderStroke? = null,
+    content: @Composable ColumnScope.() -> Unit,
+) {
+    Column(
+        modifier = modifier
+            .clip(shape ?: RoundedCornerShape(20.dp))
+            .background(if (isDark()) Color(0xFF1C1C1E) else Color.White),
+        content = content,
+    )
+}

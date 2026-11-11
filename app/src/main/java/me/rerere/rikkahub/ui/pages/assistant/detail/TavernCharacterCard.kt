@@ -20,7 +20,7 @@ import androidx.compose.material3.rememberModalBottomSheetState
 import me.rerere.rikkahub.ui.ios.Slider
 import me.rerere.rikkahub.ui.ios.Switch
 import me.rerere.rikkahub.ui.ios.Button
-import androidx.compose.material3.ElevatedCard
+import me.rerere.rikkahub.ui.ios.ElevatedCard
 import me.rerere.rikkahub.ui.ios.TextButton
 import me.rerere.rikkahub.ui.ios.OutlinedTextField
 import me.rerere.rikkahub.ui.ios.RadioButton

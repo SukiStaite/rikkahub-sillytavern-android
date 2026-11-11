@@ -84,3 +84,31 @@ fun FilledTonalIconButton(
 ) {
     IosFilledIconButton(onClick, modifier, enabled, shape, colors, containerColor, contentColor, interactionSource, content)
 }
+
+@Composable
+fun FilledTonalIconToggleButton(
+    checked: Boolean,
+    onCheckedChange: (Boolean) -> Unit,
+    modifier: Modifier = Modifier,
+    enabled: Boolean = true,
+    shapes: Any? = null,
+    colors: Any? = null,
+    interactionSource: MutableInteractionSource? = null,
+    content: @Composable () -> Unit,
+) {
+    IosFilledIconButton(
+        onClick = { onCheckedChange(!checked) },
+        modifier = modifier,
+        enabled = enabled,
+        shape = null,
+        colors = colors,
+        interactionSource = interactionSource,
+        containerColor = if (checked) {
+            if (isDark()) Color(0xFF0A84FF) else Color(0xFF007AFF)
+        } else {
+            if (isDark()) Color(0xFF2C2C2E) else Color(0xFFE9E9EA)
+        },
+        contentColor = null,
+        content = content,
+    )
+}
