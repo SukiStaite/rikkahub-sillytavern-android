@@ -64,9 +64,13 @@ import me.rerere.ui.toast.Toaster
 import me.rerere.ui.toast.rememberToasterState
 import kotlinx.coroutines.launch
 import kotlinx.serialization.Serializable
-import com.kyant.backdrop.layerBackdrop
-import com.kyant.backdrop.rememberLayerBackdrop
+import com.kyant.backdrop.backdrops.layerBackdrop
+import com.kyant.backdrop.backdrops.rememberLayerBackdrop
 import me.rerere.hugeicons.HugeIcons
+import me.rerere.hugeicons.stroke.Alert02
+import me.rerere.hugeicons.stroke.BubbleChat
+import me.rerere.hugeicons.stroke.Settings03
+import me.rerere.hugeicons.stroke.UserGroup
 import me.rerere.rikkahub.data.datastore.SettingsStore
 import me.rerere.rikkahub.data.db.DatabaseMigrationTracker
 import me.rerere.rikkahub.data.db.MigrationState
