@@ -1115,7 +1115,7 @@ private fun TopBar(
                     Text(
                         text = conversation.title.ifBlank { stringResource(R.string.chat_page_new_chat) },
                         maxLines = 1,
-                        style = MaterialTheme.typography.bodyMedium,
+                        style = MaterialTheme.typography.titleMediumEmphasized,
                         overflow = TextOverflow.Ellipsis,
                     )
                     if (chatModel != null && provider != null) {
