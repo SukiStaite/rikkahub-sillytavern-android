@@ -26,7 +26,7 @@ import me.rerere.rikkahub.ui.ios.ListItem
 import androidx.compose.material3.ListItemDefaults
 import androidx.compose.material3.MaterialTheme
 import me.rerere.rikkahub.ui.ios.ModalBottomSheet
-import androidx.compose.material3.NavigationDrawerItem
+import me.rerere.rikkahub.ui.ios.NavigationDrawerItem
 import androidx.compose.material3.Text
 import androidx.compose.material3.SheetValue
 import androidx.compose.material3.rememberBottomSheetState

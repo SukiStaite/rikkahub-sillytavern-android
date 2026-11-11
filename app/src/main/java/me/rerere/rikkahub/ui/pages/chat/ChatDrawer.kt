@@ -31,7 +31,7 @@ import androidx.compose.material3.LocalTextStyle
 import androidx.compose.material3.DrawerDefaults
 import androidx.compose.material3.MaterialTheme
 import me.rerere.rikkahub.ui.ios.ModalBottomSheet
-import androidx.compose.material3.ModalDrawerSheet
+import me.rerere.rikkahub.ui.ios.ModalDrawerSheet
 import me.rerere.rikkahub.ui.ios.OutlinedTextField
 import me.rerere.rikkahub.ui.ios.Surface
 import androidx.compose.material3.Text

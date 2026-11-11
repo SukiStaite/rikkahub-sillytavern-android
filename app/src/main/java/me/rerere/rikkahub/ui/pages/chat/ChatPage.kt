@@ -38,9 +38,9 @@ import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.MaterialTheme
 import me.rerere.rikkahub.ui.ios.ModalBottomSheet
 import androidx.compose.material3.rememberModalBottomSheetState
-import androidx.compose.material3.ModalNavigationDrawer
+import me.rerere.rikkahub.ui.ios.ModalNavigationDrawer
 import me.rerere.rikkahub.ui.ios.OutlinedTextField
-import androidx.compose.material3.PermanentNavigationDrawer
+import me.rerere.rikkahub.ui.ios.PermanentNavigationDrawer
 import me.rerere.rikkahub.ui.ios.Scaffold
 import androidx.compose.material3.SheetValue
 import me.rerere.rikkahub.ui.ios.Surface
