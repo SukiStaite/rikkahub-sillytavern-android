@@ -20,7 +20,7 @@ import androidx.compose.material3.FilterChip
 import androidx.compose.material3.LargeFlexibleTopAppBar
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.OutlinedTextField
+import me.rerere.rikkahub.ui.ios.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import me.rerere.rikkahub.ui.ios.Switch
 import androidx.compose.material3.Text
