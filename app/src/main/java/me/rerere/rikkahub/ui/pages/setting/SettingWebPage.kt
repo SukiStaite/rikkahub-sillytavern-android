@@ -22,9 +22,9 @@ import me.rerere.rikkahub.ui.ios.CircularProgressIndicator
 import androidx.compose.material3.ExtendedFloatingActionButton
 import androidx.compose.material3.Icon
 import me.rerere.rikkahub.ui.ios.IconButton
-import androidx.compose.material3.LargeFlexibleTopAppBar
+import me.rerere.rikkahub.ui.ios.LargeFlexibleTopAppBar
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Scaffold
+import me.rerere.rikkahub.ui.ios.Scaffold
 import me.rerere.rikkahub.ui.ios.Switch
 import androidx.compose.material3.Text
 import me.rerere.rikkahub.ui.ios.TextField

@@ -26,7 +26,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import me.rerere.rikkahub.ui.ios.AlertDialog
 import me.rerere.rikkahub.ui.ios.IconButton
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Scaffold
+import me.rerere.rikkahub.ui.ios.Scaffold
 import androidx.compose.material3.SecondaryScrollableTabRow
 import me.rerere.rikkahub.ui.ios.Surface
 import androidx.compose.material3.Tab

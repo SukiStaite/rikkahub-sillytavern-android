@@ -1,8 +1,8 @@
 package me.rerere.rikkahub.ui.components.ui
 
 import androidx.compose.foundation.layout.Box
-import androidx.compose.material3.DropdownMenu
-import androidx.compose.material3.DropdownMenuItem
+import me.rerere.rikkahub.ui.ios.DropdownMenu
+import me.rerere.rikkahub.ui.ios.DropdownMenuItem
 import androidx.compose.material3.Icon
 import me.rerere.rikkahub.ui.ios.IconButton
 import androidx.compose.material3.MaterialTheme

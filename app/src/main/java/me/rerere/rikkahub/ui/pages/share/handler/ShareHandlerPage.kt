@@ -12,10 +12,10 @@ import androidx.compose.foundation.lazy.items
 import me.rerere.rikkahub.ui.ios.Card
 import me.rerere.rikkahub.ui.ios.ListItem
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Scaffold
+import me.rerere.rikkahub.ui.ios.Scaffold
 import me.rerere.rikkahub.ui.ios.Surface
 import androidx.compose.material3.Text
-import androidx.compose.material3.TopAppBar
+import me.rerere.rikkahub.ui.ios.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.rememberCoroutineScope

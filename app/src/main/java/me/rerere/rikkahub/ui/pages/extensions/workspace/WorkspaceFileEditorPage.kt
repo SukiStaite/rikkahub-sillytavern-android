@@ -10,11 +10,11 @@ import androidx.compose.foundation.text.input.setTextAndPlaceCursorAtEnd
 import me.rerere.rikkahub.ui.ios.CircularProgressIndicator
 import androidx.compose.material3.LocalTextStyle
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Scaffold
+import me.rerere.rikkahub.ui.ios.Scaffold
 import androidx.compose.material3.Text
 import me.rerere.rikkahub.ui.ios.TextButton
 import me.rerere.rikkahub.ui.ios.TextField
-import androidx.compose.material3.TopAppBar
+import me.rerere.rikkahub.ui.ios.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue

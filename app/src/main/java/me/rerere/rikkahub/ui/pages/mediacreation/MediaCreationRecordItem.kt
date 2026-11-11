@@ -28,8 +28,8 @@ import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.material3.ButtonDefaults
 import me.rerere.rikkahub.ui.ios.Card
 import androidx.compose.material3.ContainedLoadingIndicator
-import androidx.compose.material3.DropdownMenu
-import androidx.compose.material3.DropdownMenuItem
+import me.rerere.rikkahub.ui.ios.DropdownMenu
+import me.rerere.rikkahub.ui.ios.DropdownMenuItem
 import me.rerere.rikkahub.ui.ios.FilledTonalButton
 import androidx.compose.material3.FilledTonalIconButton
 import androidx.compose.material3.Icon
