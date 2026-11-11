@@ -56,7 +56,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import me.rerere.rikkahub.ui.ios.ContainedLoadingIndicator
 import me.rerere.rikkahub.ui.ios.FilledIconButton
-import androidx.compose.material3.HorizontalFloatingToolbar
+import me.rerere.rikkahub.ui.ios.HorizontalFloatingToolbar
 import androidx.compose.material3.Icon
 import me.rerere.rikkahub.ui.ios.IconButton
 import androidx.compose.material3.IconButtonDefaults

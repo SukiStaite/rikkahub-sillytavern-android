@@ -43,7 +43,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.text.input.TextFieldLineLimits
 import androidx.compose.foundation.text.input.TextFieldState
-import androidx.compose.material3.BasicAlertDialog
+import me.rerere.rikkahub.ui.ios.BasicAlertDialog
 import me.rerere.rikkahub.ui.ios.DropdownMenu
 import me.rerere.rikkahub.ui.ios.HorizontalDivider
 import androidx.compose.material3.Icon

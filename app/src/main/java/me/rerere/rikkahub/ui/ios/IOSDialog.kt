@@ -180,3 +180,22 @@ private fun DefaultDragHandle() {
             .background(if (isDark()) Color(0xFF48484A) else Color(0xFFC7C7CC)),
     )
 }
+
+@Composable
+fun BasicAlertDialog(
+    onDismissRequest: () -> Unit,
+    modifier: Modifier = Modifier,
+    properties: androidx.compose.ui.window.DialogProperties = androidx.compose.ui.window.DialogProperties(),
+    content: @Composable () -> Unit,
+) {
+    androidx.compose.ui.window.Dialog(onDismissRequest = onDismissRequest, properties = properties) {
+        Column(
+            modifier = modifier
+                .clip(RoundedCornerShape(20.dp))
+                .background(if (isDark()) Color(0xFF1C1C1E) else Color.White)
+                .padding(20.dp),
+        ) {
+            content()
+        }
+    }
+}

@@ -9,7 +9,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-
 /**
  * iOS 图标按钮：透明可点击圆形区域，图标着色由 LocalContentColor 提供。
  */
@@ -34,6 +33,32 @@ fun IconButton(
                 indication = null,
                 onClick = onClick,
             ),
+        contentAlignment = Alignment.Center,
+    ) {
+        content()
+    }
+}
+
+@Composable
+fun IconToggleButton(
+    checked: Boolean,
+    onCheckedChange: (Boolean) -> Unit,
+    modifier: Modifier = Modifier,
+    enabled: Boolean = true,
+    colors: Any? = null,
+    interactionSource: MutableInteractionSource? = null,
+    shape: androidx.compose.ui.graphics.Shape? = null,
+    shapes: Any? = null,
+    content: @Composable () -> Unit,
+) {
+    Box(
+        modifier = modifier
+            .size(48.dp)
+            .clickable(
+                enabled = enabled,
+                interactionSource = interactionSource ?: remember { MutableInteractionSource() },
+                indication = null,
+            ) { onCheckedChange(!checked) },
         contentAlignment = Alignment.Center,
     ) {
         content()

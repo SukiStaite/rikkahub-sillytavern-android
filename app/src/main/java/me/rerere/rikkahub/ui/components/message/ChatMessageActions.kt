@@ -15,7 +15,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Icon
 import me.rerere.rikkahub.ui.ios.IconButton
 import androidx.compose.material3.IconButtonDefaults
-import androidx.compose.material3.IconToggleButton
+import me.rerere.rikkahub.ui.ios.IconToggleButton
 import androidx.compose.material3.ListItemDefaults
 import androidx.compose.material3.LocalMinimumInteractiveComponentSize
 import androidx.compose.material3.MaterialTheme

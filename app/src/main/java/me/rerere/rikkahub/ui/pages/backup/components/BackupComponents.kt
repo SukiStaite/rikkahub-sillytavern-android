@@ -32,7 +32,7 @@ import me.rerere.rikkahub.ui.ios.CircularWavyProgressIndicator
 import me.rerere.rikkahub.ui.ios.FilledTonalButton
 import androidx.compose.material3.FloatingToolbarDefaults.ScreenOffset
 import androidx.compose.material3.FloatingToolbarDefaults.floatingToolbarVerticalNestedScroll
-import androidx.compose.material3.HorizontalFloatingToolbar
+import me.rerere.rikkahub.ui.ios.HorizontalFloatingToolbar
 import androidx.compose.material3.Icon
 import me.rerere.rikkahub.ui.ios.IconButton
 import androidx.compose.material3.MaterialTheme

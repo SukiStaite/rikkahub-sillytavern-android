@@ -58,7 +58,7 @@ import androidx.compose.material3.CardDefaults
 import me.rerere.rikkahub.ui.ios.FilledTonalIconButton
 import androidx.compose.material3.FloatingToolbarDefaults.ScreenOffset
 import androidx.compose.material3.FloatingToolbarDefaults.floatingToolbarVerticalNestedScroll
-import androidx.compose.material3.HorizontalFloatingToolbar
+import me.rerere.rikkahub.ui.ios.HorizontalFloatingToolbar
 import androidx.compose.material3.Icon
 import me.rerere.rikkahub.ui.ios.IconButton
 import me.rerere.rikkahub.ui.ios.InputChip
