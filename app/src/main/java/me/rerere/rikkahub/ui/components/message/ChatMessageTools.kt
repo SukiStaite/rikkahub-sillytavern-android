@@ -19,7 +19,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.SheetValue
 import androidx.compose.material3.rememberBottomSheetState
-import androidx.compose.material3.AlertDialog
+import me.rerere.rikkahub.ui.ios.AlertDialog
 import me.rerere.rikkahub.ui.ios.Card
 import androidx.compose.material3.CardDefaults
 import me.rerere.rikkahub.ui.ios.FilledTonalButton
@@ -29,7 +29,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.ModalBottomSheet
+import me.rerere.rikkahub.ui.ios.ModalBottomSheet
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import me.rerere.rikkahub.ui.ios.TextButton

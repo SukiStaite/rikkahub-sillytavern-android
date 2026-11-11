@@ -1,6 +1,6 @@
 package me.rerere.rikkahub.ui.components.ui
 
-import androidx.compose.material3.AlertDialog
+import me.rerere.rikkahub.ui.ios.AlertDialog
 import androidx.compose.material3.Text
 import me.rerere.rikkahub.ui.ios.TextButton
 import androidx.compose.runtime.Composable

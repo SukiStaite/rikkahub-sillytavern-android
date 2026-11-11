@@ -18,12 +18,12 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.sizeIn
 import androidx.compose.foundation.layout.wrapContentHeight
-import androidx.compose.material3.AlertDialog
+import me.rerere.rikkahub.ui.ios.AlertDialog
 import me.rerere.rikkahub.ui.ios.Button
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.ModalBottomSheet
+import me.rerere.rikkahub.ui.ios.ModalBottomSheet
 import androidx.compose.material3.OutlinedTextField
 import me.rerere.rikkahub.ui.ios.Surface
 import androidx.compose.material3.Text

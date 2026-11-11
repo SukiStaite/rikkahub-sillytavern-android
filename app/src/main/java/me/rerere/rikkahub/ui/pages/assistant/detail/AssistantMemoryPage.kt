@@ -20,7 +20,7 @@ import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.AlertDialog
+import me.rerere.rikkahub.ui.ios.AlertDialog
 import androidx.compose.material3.ContainedLoadingIndicator
 import me.rerere.rikkahub.ui.ios.FilledTonalButton
 import androidx.compose.material3.Icon

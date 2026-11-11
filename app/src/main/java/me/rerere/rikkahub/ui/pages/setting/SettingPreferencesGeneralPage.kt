@@ -32,7 +32,7 @@ import android.os.Build
 import me.rerere.rikkahub.ui.components.ui.permission.PermissionManager
 import me.rerere.rikkahub.ui.components.ui.permission.PermissionNotification
 import me.rerere.rikkahub.ui.components.ui.permission.rememberPermissionState
-import androidx.compose.material3.AlertDialog
+import me.rerere.rikkahub.ui.ios.AlertDialog
 import me.rerere.rikkahub.BuildConfig
 import me.rerere.rikkahub.data.remote.toProxyOrNull
 import okhttp3.OkHttpClient
