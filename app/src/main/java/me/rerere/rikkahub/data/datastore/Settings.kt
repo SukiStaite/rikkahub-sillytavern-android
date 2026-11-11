@@ -422,8 +422,8 @@ data class DisplaySetting(
     val enableAutoScroll: Boolean = true,
     val enableLatexRendering: Boolean = true,
     val enableQuoteHighlight: Boolean = false,
-    val enableBlurEffect: Boolean = false,
-    val backgroundEffectType: BackgroundEffectType = BackgroundEffectType.BLUR,
+    val enableBlurEffect: Boolean = true,
+    val backgroundEffectType: BackgroundEffectType = BackgroundEffectType.GLASS,
     // 桌面图标主题：靠 activity-alias 启停切换，默认兔盔
     val appIcon: AppIcon = AppIcon.RABBIT,
     // 输入框模糊/玻璃的不透明度（0.1~1.0），太低会影响正文可读性

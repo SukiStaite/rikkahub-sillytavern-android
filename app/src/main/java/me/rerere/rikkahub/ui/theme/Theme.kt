@@ -83,8 +83,10 @@ fun RikkahubTheme(
     val amoledDarkMode by rememberAmoledDarkMode()
 
     val materialMode = when (settings.displaySetting.materialMode) {
+        // iOS 27 液态玻璃：默认 iOS 主题与 liquid_glass 主题都走 GLASS 材质，
+        // 让全局表面（顶栏/卡片/输入框/底部栏）呈现半透明玻璃质感。
         DisplayMaterialMode.FOLLOW_THEME ->
-            if (settings.themeId == LIQUID_GLASS_THEME_ID) DisplayMaterialMode.GLASS
+            if (settings.themeId == LIQUID_GLASS_THEME_ID || settings.themeId == "ios") DisplayMaterialMode.GLASS
             else DisplayMaterialMode.FLAT
 
         else -> settings.displaySetting.materialMode
