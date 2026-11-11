@@ -24,9 +24,9 @@ import androidx.compose.material3.MaterialTheme
 import me.rerere.rikkahub.ui.ios.OutlinedTextField
 import androidx.compose.material3.ProvideTextStyle
 import me.rerere.rikkahub.ui.ios.Scaffold
-import androidx.compose.material3.SegmentedButton
+import me.rerere.rikkahub.ui.ios.SegmentedButton
 import androidx.compose.material3.SegmentedButtonDefaults
-import androidx.compose.material3.SingleChoiceSegmentedButtonRow
+import me.rerere.rikkahub.ui.ios.SingleChoiceSegmentedButtonRow
 import me.rerere.rikkahub.ui.ios.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarDefaults

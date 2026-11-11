@@ -38,7 +38,7 @@ import androidx.compose.material3.MaterialShapes
 import androidx.compose.material3.MaterialTheme
 import me.rerere.rikkahub.ui.ios.ModalBottomSheet
 import me.rerere.rikkahub.ui.ios.RadioButton
-import androidx.compose.material3.SegmentedListItem
+import me.rerere.rikkahub.ui.ios.SegmentedListItem
 import androidx.compose.material3.SheetValue
 import androidx.compose.material3.Text
 import me.rerere.rikkahub.ui.ios.ToggleButton

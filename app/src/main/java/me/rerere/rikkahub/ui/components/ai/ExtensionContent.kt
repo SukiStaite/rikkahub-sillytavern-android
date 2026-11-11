@@ -21,7 +21,7 @@ import androidx.compose.material3.ListItemDefaults
 import androidx.compose.material3.ListItemShapes
 import androidx.compose.material3.MaterialShapes
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.SegmentedListItem
+import me.rerere.rikkahub.ui.ios.SegmentedListItem
 import me.rerere.rikkahub.ui.ios.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.toShape
