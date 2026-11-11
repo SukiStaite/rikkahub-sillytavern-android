@@ -2,7 +2,7 @@
 <resources>
   <string name="about_page_author_repo">作者のリポジトリ</string>
   <string name="about_page_author_repo_desc">このカスタム版のソースコード</string>
-  <string name="about_page_custom_build">花灯カスタムビルド %1$s / %2$s</string>
+  <string name="about_page_custom_build">糖宝のrikka カスタムビルド %1$s / %2$s</string>
   <string name="about_page_github">Github</string>
   <string name="about_page_license">ライセンス</string>
   <string name="about_page_system">システム</string>
@@ -10,7 +10,7 @@
   <string name="about_page_version">バージョン</string>
   <string name="about_page_website">ウェブサイト</string>
   <string name="add">追加</string>
-  <string name="app_name">Lantern</string>
+  <string name="app_name">糖宝のrikka</string>
   <string name="asr_button_content_description">音声認識</string>
   <string name="asr_button_stop">停止</string>
   <string name="asr_step_hotwords_placeholder">hotword1, hotword2, hotword3</string>

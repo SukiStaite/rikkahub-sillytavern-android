@@ -2,7 +2,7 @@
 <resources>
   <string name="about_page_author_repo">작성자 저장소</string>
   <string name="about_page_author_repo_desc">이 커스텀 빌드의 소스 코드</string>
-  <string name="about_page_custom_build">HuaDeng 커스텀 빌드 %1$s / %2$s</string>
+  <string name="about_page_custom_build">糖宝のrikka 커스텀 빌드 %1$s / %2$s</string>
   <string name="about_page_github">Github</string>
   <string name="about_page_license">라이선스</string>
   <string name="about_page_system">시스템</string>
@@ -10,7 +10,7 @@
   <string name="about_page_version">버전</string>
   <string name="about_page_website">웹사이트</string>
   <string name="add">추가</string>
-  <string name="app_name">Lantern</string>
+  <string name="app_name">糖宝のrikka</string>
   <string name="asr_button_content_description">음성 인식</string>
   <string name="asr_button_stop">중지</string>
   <string name="asr_step_hotwords_placeholder">핫워드1, 핫워드2, 핫워드3</string>

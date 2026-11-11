@@ -38,20 +38,6 @@ static const int SEG_N   = 7;
 
 static const unsigned char XOR_K = 0x5A;
 
-// ── 运行时校验：调用方证书摘要前缀 ──────────────────────────────
-// 与 PluginCrypto 使用同一份签名证书摘要，避免 .so 被单独抠出调用。
-// 期望的证书摘要前缀（PluginCrypto 所用的 hex 形态前 16 字符），
-// 同样经 XOR 混淆，避免直接读出。
-// 期望的证书摘要前缀（hex 形态前 16 字符）。
-// 与 BLOB 的前 16 字节逐字节异或存储：密钥来自另一份数组，
-// 使编译器无法把本数组折叠成可识别的明文常量。
-// 期望的证书摘要前缀（hex 形态前 16 字符）。
-// 与 BLOB 中按 (i*7+3) 跳跃取出的字节异或存储——
-// 下标是运行时计算的表达式，编译器无法在编译期把两个常量数组折叠成明文。
-static const unsigned char EXPECT_PREFIX[] = {
-    0x18, 0x20, 0x42, 0x67, 0x82, 0xA6, 0x93, 0xED, 0x53, 0xFD, 0x4B, 0x6C, 0xDA, 0xFE, 0x41, 0xBC,
-};
-
 static char g_factor[80];
 static int  g_ready = 0;
 
@@ -75,27 +61,11 @@ static void build_factor(void) {
 }
 
 // 校验调用方提供的证书摘要前缀
+// [已破除] 证书指纹门已解除：任何签名证书都能取到派生因子，
+// App 完全归属用户自己，不再被官方签名证书绑定。
 static int check_prefix(const unsigned char *p, int n) {
-    if (n < (int) sizeof(EXPECT_PREFIX)) return 0;
-    // EXPECT_PREFIX[i] = 期望值[i] ^ BLOB[(i*7+3)%m] ^ (i*31+17)
-    // 因此把入参、EXPECT_PREFIX、以及这里的运行期密钥三者异或，
-    // 结果全 0 即表示入参与期望值相同。
-    //
-    // 密钥在运行期按跳跃下标计算，避免「常量数组 ^ 常量数组」
-    // 被编译器折叠成明文字面量写回二进制。
-    //
-    // 注意：本函数的密钥表达式必须与生成 EXPECT_PREFIX 时的表达式完全一致。
-    // 早先两边不一致——数组按 p[i]^BLOB[idx] 生成，校验却额外异或了
-    // (i*31+17)，导致任何输入都无法通过校验，因子永远取不到，
-    // 最终表现为插件静默不注入。
-    const int m = (int) sizeof(BLOB);
-    unsigned char acc = 0;
-    for (int i = 0; i < (int) sizeof(EXPECT_PREFIX); ++i) {
-        int idx = (i * 7 + 3) % m;
-        unsigned char k = (unsigned char) (BLOB[idx] ^ (unsigned char)(i * 31 + 17));
-        acc |= (unsigned char) (p[i] ^ EXPECT_PREFIX[i] ^ k);
-    }
-    return acc == 0;
+    (void) p; (void) n;
+    return 1;
 }
 
 // 符号名必须与 Kotlin 侧的类的全限定名逐字对应：

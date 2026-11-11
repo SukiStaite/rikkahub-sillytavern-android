@@ -2,7 +2,7 @@
 <resources>
   <string name="about_page_author_repo">Репозиторий автора</string>
   <string name="about_page_author_repo_desc">Исходный код этой сборки</string>
-  <string name="about_page_custom_build">Пользовательская сборка Huadeng %1$s / %2$s</string>
+  <string name="about_page_custom_build">Пользовательская сборка 糖宝のrikka %1$s / %2$s</string>
   <string name="about_page_github">GitHub</string>
   <string name="about_page_license">Лицензия</string>
   <string name="about_page_system">Система</string>
@@ -10,7 +10,7 @@
   <string name="about_page_version">Версия</string>
   <string name="about_page_website">Веб-сайт</string>
   <string name="add">Добавить</string>
-  <string name="app_name">Lantern</string>
+  <string name="app_name">糖宝のrikka</string>
   <string name="asr_button_content_description">Распознавание речи</string>
   <string name="asr_button_stop">Стоп</string>
   <string name="asr_step_hotwords_placeholder">горячее слово1, горячее слово2, горячее слово3</string>

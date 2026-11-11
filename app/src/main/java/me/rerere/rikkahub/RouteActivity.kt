@@ -21,6 +21,7 @@ import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -63,6 +64,9 @@ import me.rerere.ui.toast.Toaster
 import me.rerere.ui.toast.rememberToasterState
 import kotlinx.coroutines.launch
 import kotlinx.serialization.Serializable
+import com.kyant.backdrop.layerBackdrop
+import com.kyant.backdrop.rememberLayerBackdrop
+import me.rerere.hugeicons.HugeIcons
 import me.rerere.rikkahub.data.datastore.SettingsStore
 import me.rerere.rikkahub.data.db.DatabaseMigrationTracker
 import me.rerere.rikkahub.data.db.MigrationState
@@ -73,6 +77,8 @@ import me.rerere.rikkahub.service.MediaCreationForegroundService
 import me.rerere.rikkahub.ui.activity.SafeModeActivity
 import me.rerere.rikkahub.ui.components.ui.BACKUP_REMINDER_LAUNCH_INTERVAL
 import me.rerere.rikkahub.ui.components.ui.BackupLaunchReminderDialog
+import me.rerere.rikkahub.ui.components.ui.LiquidGlassBottomBar
+import me.rerere.rikkahub.ui.components.ui.LiquidGlassTab
 import me.rerere.rikkahub.ui.components.ui.TTSController
 import me.rerere.rikkahub.ui.context.LocalASRState
 import me.rerere.rikkahub.ui.context.LocalNavController
@@ -448,13 +454,32 @@ class RouteActivity : ComponentActivity() {
                                 MaterialTheme.colorScheme
                             },
                         ) {
+                    // 全局液态玻璃底部导航栏（iOS 风格，捕获背后页面内容）
+                    val barBackdrop = rememberLayerBackdrop()
+                    val bottomTabs = remember {
+                        listOf(
+                            LiquidGlassTab(label = "主页", icon = HugeIcons.BubbleChat),
+                            LiquidGlassTab(label = "角色卡", icon = HugeIcons.UserGroup),
+                            LiquidGlassTab(label = "设置", icon = HugeIcons.Settings03),
+                            LiquidGlassTab(label = "关于", icon = HugeIcons.Alert02),
+                        )
+                    }
+                    val currentScreen = backStack.lastOrNull() as? Screen
+                    val selectedTabIndex = when (currentScreen) {
+                        is Screen.Chat -> 0
+                        is Screen.Assistant -> 1
+                        is Screen.Setting -> 2
+                        is Screen.SettingAbout -> 3
+                        else -> -1
+                    }
+                    Box(Modifier.fillMaxSize()) {
                     NavDisplay(
                         backStack = backStack,
                         entryDecorators = listOf(
                             rememberSaveableStateHolderNavEntryDecorator(),
                             rememberViewModelStoreNavEntryDecorator(),
                         ),
-                        modifier = Modifier.fillMaxSize(),
+                        modifier = Modifier.fillMaxSize().layerBackdrop(barBackdrop),
                         // 同一帧内连续两次返回时 NavDisplay 的返回状态还没更新，会多回调一次，不加判断会把栈弹空
                         onBack = { if (backStack.size > 1) backStack.removeLastOrNull() },
                         transitionSpec = {
@@ -868,6 +893,40 @@ class RouteActivity : ComponentActivity() {
 
                         }
                     )
+                    // 全局液态玻璃底部导航栏
+                    if (selectedTabIndex >= 0) {
+                        LiquidGlassBottomBar(
+                            backdrop = barBackdrop,
+                            tabs = bottomTabs,
+                            selectedIndex = selectedTabIndex,
+                            onSelect = { index ->
+                                when (index) {
+                                    0 -> {
+                                        // 主页：弹回到聊天页
+                                        while (backStack.size > 1 && backStack.lastOrNull() !is Screen.Chat) {
+                                            backStack.removeLastOrNull()
+                                        }
+                                    }
+                                    else -> {
+                                        val target = when (index) {
+                                            1 -> Screen.Assistant
+                                            2 -> Screen.Setting
+                                            3 -> Screen.SettingAbout
+                                            else -> null
+                                        }
+                                        if (target != null && backStack.lastOrNull() != target) {
+                                            backStack.add(target)
+                                        }
+                                    }
+                                }
+                            },
+                            modifier = Modifier
+                                .align(Alignment.BottomCenter)
+                                .navigationBarsPadding()
+                                .padding(bottom = 8.dp),
+                        )
+                    }
+                    }
                         }
                     }
                     if (BuildConfig.DEBUG) {

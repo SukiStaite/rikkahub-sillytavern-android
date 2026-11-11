@@ -16,6 +16,8 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.ime
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.rememberScrollState
@@ -67,6 +69,7 @@ import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
@@ -581,6 +584,9 @@ private fun ChatPageContent(
 
     TTSAutoPlay(vm = vm, setting = setting, conversation = conversation)
 
+    // 底部导航栏是全局共享的（见 RouteActivity），这里只需为悬浮栏预留输入框下方的空间
+    val imeVisible = WindowInsets.ime.getBottom(LocalDensity.current) > 0
+
     Surface(
         color = setting.displaySetting.chatBackgroundColor?.toComposeColor()
             ?: MaterialTheme.colorScheme.background,
@@ -633,6 +639,7 @@ private fun ChatPageContent(
                 )
             },
             bottomBar = {
+            Column {
             val barFocusManager = LocalFocusManager.current
             val barKeyboard = LocalSoftwareKeyboardController.current
                 val messageQueue by vm.messageQueue.collectAsStateWithLifecycle()
@@ -855,6 +862,12 @@ private fun ChatPageContent(
                         showFilesSheet = true
                     },
                 )
+                Spacer(
+                    modifier = Modifier.height(
+                        if (imeVisible) 0.dp else 64.dp
+                    )
+                )
+            }
             },
         ) { innerPadding ->
             ChatList(
