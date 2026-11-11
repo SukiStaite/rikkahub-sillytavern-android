@@ -41,6 +41,7 @@ import me.rerere.rikkahub.data.datastore.migration.PreferenceStoreV3Migration
 import me.rerere.rikkahub.data.datastore.migration.PreferenceStoreV4Migration
 import me.rerere.rikkahub.data.datastore.migration.PreferenceStoreV5Migration
 import me.rerere.rikkahub.data.datastore.migration.PreferenceStoreV6Migration
+import me.rerere.rikkahub.data.datastore.migration.PreferenceStoreV7Migration
 import me.rerere.rikkahub.data.model.Assistant
 import java.io.File
 import kotlin.time.Duration.Companion.milliseconds
@@ -82,6 +83,7 @@ private fun createSettingsDataStore(context: Context): DataStore<Preferences> {
             PreferenceStoreV4Migration(),
             PreferenceStoreV5Migration(),
             PreferenceStoreV6Migration(),
+            PreferenceStoreV7Migration(),
         ),
         produceFile = { file },
     )
