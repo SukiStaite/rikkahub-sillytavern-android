@@ -17,7 +17,7 @@ permissions:
 
 jobs:
   release:
-    if: github.repository == 'MiaoWuNYA/rikkahub-sillytavern-android'
+    if: github.repository == 'SukiStaite/rikkahub-sillytavern-android'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
