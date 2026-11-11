@@ -64,7 +64,7 @@ import androidx.compose.ui.text.withStyle
 import me.rerere.rikkahub.R
 import me.rerere.rikkahub.Screen
 import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.material3.Switch
+import me.rerere.rikkahub.ui.ios.Switch
 
 /**
  * 首次引导。

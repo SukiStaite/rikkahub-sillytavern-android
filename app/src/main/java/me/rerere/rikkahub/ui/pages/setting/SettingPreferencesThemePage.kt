@@ -59,7 +59,7 @@ import me.rerere.rikkahub.ui.hooks.rememberColorMode
 import me.rerere.rikkahub.ui.components.ui.CardGroupIcon
 import androidx.compose.foundation.layout.Row
 import androidx.compose.ui.Alignment
-import androidx.compose.material3.Slider
+import me.rerere.rikkahub.ui.ios.Slider
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.rememberCoroutineScope

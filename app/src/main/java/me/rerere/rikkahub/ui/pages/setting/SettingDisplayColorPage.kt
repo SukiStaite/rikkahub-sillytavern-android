@@ -28,8 +28,8 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.LargeFlexibleTopAppBar
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Slider
-import androidx.compose.material3.Switch
+import me.rerere.rikkahub.ui.ios.Slider
+import me.rerere.rikkahub.ui.ios.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBarDefaults
