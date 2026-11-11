@@ -27,9 +27,9 @@ import me.rerere.rikkahub.ui.ios.AlertDialog
 import me.rerere.rikkahub.ui.ios.IconButton
 import androidx.compose.material3.MaterialTheme
 import me.rerere.rikkahub.ui.ios.Scaffold
-import androidx.compose.material3.SecondaryScrollableTabRow
+import me.rerere.rikkahub.ui.ios.SecondaryScrollableTabRow
 import me.rerere.rikkahub.ui.ios.Surface
-import androidx.compose.material3.Tab
+import me.rerere.rikkahub.ui.ios.Tab
 import androidx.compose.material3.Text
 import me.rerere.rikkahub.ui.ios.TextButton
 import androidx.compose.runtime.Composable
