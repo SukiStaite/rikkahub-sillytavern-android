@@ -70,10 +70,10 @@ fun LiquidGlassBottomBar(
     Row(
         modifier = modifier
             .fillMaxWidth()
-            .height(56.dp)
+            .height(64.dp)
             .drawBackdrop(
                 backdrop = backdrop,
-                shape = { RoundedCornerShape(28.dp) },
+                shape = { RoundedCornerShape(32.dp) },
                 effects = {
                     vibrancy()
                     blur(blurPx)
@@ -81,7 +81,7 @@ fun LiquidGlassBottomBar(
                 },
                 innerShadow = { InnerShadow.Default },
                 onDrawSurface = {
-                    val corner = androidx.compose.ui.geometry.CornerRadius(28.dp.toPx(), 28.dp.toPx())
+                    val corner = androidx.compose.ui.geometry.CornerRadius(32.dp.toPx(), 32.dp.toPx())
                     drawRoundRect(color = containerColor, cornerRadius = corner)
                 },
             )

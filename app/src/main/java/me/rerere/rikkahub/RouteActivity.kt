@@ -927,7 +927,7 @@ class RouteActivity : ComponentActivity() {
                             modifier = Modifier
                                 .align(Alignment.BottomCenter)
                                 .navigationBarsPadding()
-                                .padding(bottom = 8.dp),
+                                .padding(bottom = 12.dp),
                         )
                     }
                     }

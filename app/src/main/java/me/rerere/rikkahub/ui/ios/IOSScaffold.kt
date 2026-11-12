@@ -18,6 +18,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import me.rerere.rikkahub.ui.theme.LocalMaterialMode
+import me.rerere.rikkahub.ui.theme.isGlass
 
 /**
  * iOS 脚手架 + 顶部导航栏。
@@ -62,8 +64,10 @@ fun Scaffold(
 }
 
 @Composable
-private fun iosBarBackground(): Color =
-    if (isDark()) Color(0xFF161618) else Color(0xFFF8F8FA)
+private fun iosBarBackground(): Color {
+    val base = if (isDark()) Color(0xFF161618) else Color(0xFFF8F8FA)
+    return if (LocalMaterialMode.current.isGlass) base.copy(alpha = 0.86f) else base
+}
 
 @Composable
 private fun TopBarChrome(
