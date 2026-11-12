@@ -21,6 +21,8 @@ import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import me.rerere.rikkahub.ui.theme.LocalMaterialMode
+import me.rerere.rikkahub.ui.theme.isGlass
 
 /**
  * iOS 风格卡片 / 表面：圆角玻璃卡片。
@@ -30,9 +32,16 @@ import androidx.compose.ui.unit.dp
 private val CardShape = RoundedCornerShape(20.dp)
 
 @Composable
-private fun cardColor(): Color =
-    if (isDark()) Color(0xFF1C1C1E).copy(alpha = 0.85f)
-    else Color.White.copy(alpha = 0.82f)
+private fun cardColor(): Color {
+    val base = if (isDark()) Color(0xFF1C1C1E) else Color.White
+    return if (LocalMaterialMode.current.isGlass) base.copy(alpha = 0.62f) else base.copy(alpha = 0.85f)
+}
+
+@Composable
+private fun glassBorder(): BorderStroke? =
+    if (LocalMaterialMode.current.isGlass)
+        BorderStroke(1.dp, MaterialTheme.colorScheme.onSurface.copy(alpha = 0.14f))
+    else null
 
 @Composable
 private fun cardContentColor(): Color = MaterialTheme.colorScheme.onSurface
@@ -51,12 +60,13 @@ fun Card(
     content: @Composable ColumnScope.() -> Unit,
 ) {
     val s = shape ?: CardShape
+    val b = border ?: glassBorder()
     Column(
         modifier = modifier
             .shadow(2.dp, s)
             .clip(s)
             .background(cardColor())
-            .then(if (border != null) Modifier.border(border, s) else Modifier)
+            .then(if (b != null) Modifier.border(b, s) else Modifier)
             .clickable(
                 enabled = enabled,
                 interactionSource = interactionSource ?: remember { MutableInteractionSource() },
@@ -83,12 +93,13 @@ fun Card(
     content: @Composable ColumnScope.() -> Unit,
 ) {
     val s = shape ?: CardShape
+    val b = border ?: glassBorder()
     Column(
         modifier = modifier
             .shadow(2.dp, s)
             .clip(s)
             .background(cardColor())
-            .then(if (border != null) Modifier.border(border, s) else Modifier),
+            .then(if (b != null) Modifier.border(b, s) else Modifier),
     ) {
         CompositionLocalProvider(
             androidx.compose.material3.LocalContentColor provides cardContentColor(),
@@ -114,12 +125,13 @@ fun Surface(
     content: @Composable () -> Unit,
 ) {
     val bg = color
+    val b = border ?: glassBorder()
     Box(
         modifier = modifier
             .then(if (shadowElevation > 0.dp) Modifier.shadow(shadowElevation, shape) else Modifier)
             .clip(shape)
             .background(bg)
-            .then(if (border != null) Modifier.border(border, shape) else Modifier)
+            .then(if (b != null) Modifier.border(b, shape) else Modifier)
             .clickable(
                 enabled = enabled,
                 interactionSource = interactionSource ?: remember { MutableInteractionSource() },
@@ -149,12 +161,13 @@ fun Surface(
     content: @Composable () -> Unit,
 ) {
     val bg = if (alpha != null) color.copy(alpha = alpha) else color
+    val b = border ?: glassBorder()
     Box(
         modifier = modifier
             .then(if (shadowElevation > 0.dp) Modifier.shadow(shadowElevation, shape) else Modifier)
             .clip(shape)
             .background(bg)
-            .then(if (border != null) Modifier.border(border, shape) else Modifier),
+            .then(if (b != null) Modifier.border(b, shape) else Modifier),
     ) {
         CompositionLocalProvider(
             androidx.compose.material3.LocalContentColor provides contentColor,
